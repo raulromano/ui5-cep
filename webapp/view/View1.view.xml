@@ -1,0 +1,37 @@
+<mvc:View xmlns:form="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns:smartList="sap.ui.comp.smartlist" xmlns="sap.m"
+	controllerName="RR.ViaCEP.controller.View1" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}" titleAlignment="Center">
+					<content>
+						<SearchField id="search" search="onSearch"/>
+						<form:SimpleForm editable="true" layout="ResponsiveGridLayout">
+							<form:content>
+								<Label text="Logradouro"/>
+								<Input value="{/logradouro}" visible="false"/>
+								<Label text="Bairro"/>
+								<Input value="{/bairro}" visible="false"/>
+								<Label text="UF"/>
+								<Input value="{/uf}" visible="false"/>
+							</form:content>
+						</form:SimpleForm>
+						<List items="{/}">
+							<items>
+								<!--<StandardListItem title="Detalhes" info="Info" type="Navigation" icon="sap-icon://inspection" press="onDetailItem" visible="false"/>-->
+								<StandardListItem description="Descrição" title="{}" visible="true"/>
+							</items>
+						</List>
+					</content>
+					<footer>
+						<Bar>
+							<contentMiddle>
+								<Button text="Documentação" id="button0" icon="sap-icon://message-information"/>
+							</contentMiddle>
+						</Bar>
+					</footer>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

@@ -1,0 +1,44 @@
+{
+	"welcomeFile": "/webapp/index.html",
+	"routes": [{
+		"path": "CEP",
+		"target": {
+			"type": "destination",
+			"name": "VIA_CEP"
+		},
+		"description": "API - CEP"
+	}, {
+		"path": "/resources",
+		"target": {
+			"type": "service",
+			"name": "sapui5",
+			"entryPath": "/resources"
+		},
+		"description": "SAPUI5 Resources"
+	}, {
+		"path": "/test-resources",
+		"target": {
+			"type": "service",
+			"name": "sapui5",
+			"entryPath": "/test-resources"
+		},
+		"description": "SAPUI5 Resources"
+	}, {
+		"path": "/webapp/resources",
+		"target": {
+			"type": "service",
+			"name": "sapui5",
+			"entryPath": "/resources"
+		},
+		"description": "SAPUI5 Resources"
+	}, {
+		"path": "/webapp/test-resources",
+		"target": {
+			"type": "service",
+			"name": "sapui5",
+			"entryPath": "/test-resources"
+		},
+		"description": "SAPUI5 Test Resources"
+	}],
+	"sendWelcomeFileRedirect": true
+}
